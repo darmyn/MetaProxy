@@ -32,9 +32,9 @@ end
 local TestObject = "require(Test)" --> require object
 Test = TestObject.new()
 Test("Enabled", function(tab, key, val)
-    print("tab") --> the proxy
-    print("key") --> Enabled
-    print("val") --> what ever the value is that's been written
+    print(tab) --> the proxy
+    print(key) --> Enabled
+    print(val) --> what ever the value is that's been written
 
     if val then -- value == true
         Test:Enable()
